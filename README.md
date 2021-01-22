@@ -15,17 +15,17 @@ Below you can find the mapping to the ENV variables
 | timeout                          | rendertron_timeout              | number              |
 | width                            | rendertron_width                | number              |
 | height                           | rendertron_height               | number              |
-| reqHeaders                       | rendertron_reqHeaders           | String-encoded JSON |
+| reqHeaders                       | rendertron_reqHeaders           | Stringified JSON    |
 | cache                            | rendertron_cache                | boolean             |
 | cacheConfig.cacheDurationMinutes | rendertron_cacheDurationMinutes | number              |
 | cacheConfig.cacheMaxEntries      | rendertron_cacheMaxEntries      | number              |
 | cacheConfig.snapshotDir          | rendertron_snapshotDir          | string              |
-| renderOnly                       | rendertron_renderOnly           | String-encoded JSON |
+| renderOnly                       | rendertron_renderOnly           | Stringified JSON    |
 | closeBrowser                     | rendertron_closeBrowser         | boolean             |
 | restrictedUrlPattern             | rendertron_restrictedUrlPattern | string              |
 
 ## More examples
 ```bash
-# use the JSON-encoded string
+# use the JSON value
 docker run -e="rendertron_renderOnly=[\"http://google.com\"]" -it -p 3000:3000 z1bba/env-rendertron
 ```
