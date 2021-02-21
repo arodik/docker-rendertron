@@ -6,7 +6,7 @@ Dockerized [Rendertron](https://github.com/GoogleChrome/rendertron) with ENV var
 docker run -e="rendertron_cache=filesystem" -e="rendertron_width=1440" -e="rendertron_cacheDurationMinutes=60" -it -p 3000:3000 z1bba/env-rendertron
 ```
 
-## Supported variables
+## Configuration
 See the [configuration instructions in the official Renderton docs](https://github.com/GoogleChrome/rendertron#config). 
 Below you can find the mapping to the ENV variables
 
